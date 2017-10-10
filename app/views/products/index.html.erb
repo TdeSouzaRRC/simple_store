@@ -30,9 +30,15 @@
 
 <br>
 
-<div>
+<div style="border: 1px solid black;">
     <% 100.times do %>
       <p><%= "Chunky Bacon " %></p>
     <%end%>
+</div>
+
+<div>
+  <p>Total number of unique products = <%= @total_number_of_unique_items %></p>
+  <p>Average price of products = <%= @average_price_of_products%></p>
+  <p>Total stock = <%= @total_stock%></p>
 </div>
 <%= link_to 'New Product', new_product_path %>
